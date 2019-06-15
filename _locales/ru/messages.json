@@ -1,0 +1,17 @@
+{
+  "extensionName": {
+    "message": "Ghbdtn! Привет!",
+    "description": "Имя расширения"
+  },
+
+  "extensionDescription": {
+    "message": "Переводит весь текст набранный на английском на русский.",
+    "description": "Описание расширения."
+  },
+
+  "menuItem": {
+    "message": "Го парусски",
+    "description": "Пункт меню"
+  }
+
+}
