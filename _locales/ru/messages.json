@@ -1,7 +1,7 @@
 {
   "extensionName": {
     "message": "Ghbdtn! Привет!",
-    "description": "Имя расширения"
+    "description": "Имя расширения."
   },
 
   "extensionDescription": {
@@ -10,8 +10,8 @@
   },
 
   "menuItem": {
-    "message": "Го парусски",
-    "description": "Пункт меню"
+    "message": "ENG -> RUS",
+    "description": "Перевод выделенного текста на русский."
   }
 
 }
