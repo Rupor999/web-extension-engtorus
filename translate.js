@@ -51,6 +51,7 @@ function getFocusElem() {
 }
 
 function toRus(old_string) {
+  console.log('old_string: ' + old_string);
   var upper = false;
   var new_string = '';
 
@@ -74,4 +75,9 @@ function getNewString(all_str, sel_str, rus_str) {
 }
 
 var fE = getFocusElem();
-fE.innerHTML = getNewString(fE.innerHTML, window.getSelection().toString(), toRus(window.getSelection().toString()));
+
+if (fE.tagName == 'INPUT') {
+  fE.value = getNewString(fE.value, fE.value, toRus(fE.value));
+} else {
+  fE.innerHTML = getNewString(fE.innerHTML, window.getSelection().toString(), toRus(window.getSelection().toString()));
+}
