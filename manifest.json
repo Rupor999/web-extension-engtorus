@@ -6,13 +6,13 @@
   "default_locale": "ru",
   "description": "Переводит весь текст набранный на английском на русский",
   "icons": {
-    "48": "icons/icon-72.png"
+    "48": "icons/icon-48.png"
   },
   "author": "Ilya Panfilov",
   "applications": {
     "gecko": {
       "id": "01gus10@mail.ru",
-      "strict_min_version": "45.0"
+      "strict_min_version": "55.0"
     }
   },
 
