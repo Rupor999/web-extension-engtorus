@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "Ghbdtn! -> Привет!",
-  "version": "1.2",
+  "version": "1.3",
   "default_locale": "ru",
   "description": "Переводит весь текст набранный на английском на русский",
   "icons": {
