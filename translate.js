@@ -38,7 +38,8 @@ var eng_to_rusmap = new Map([
   ['\"', 'Э'],
   ['<', 'Б'],
   ['>', 'Ю'],
-  ['?', ',']
+  ['?', ','],
+  ['&', '?']
 ]);
 
 function getFocusElem() {
