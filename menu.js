@@ -14,17 +14,34 @@ function onError(error) {
   console.log(`Error: ${error}`);
 }
 
-browser.menus.create({
-  id: "Translate",
-  title: browser.i18n.getMessage("menuItem"),
-  contexts: ["selection"]
-}, onCreated);
+browser.menus.create(
+  {
+    id: "Translate&Replace",
+    title: browser.i18n.getMessage("menuItem1"),
+    contexts: ["selection"],
+  },
+  onCreated
+);
+
+browser.menus.create(
+  {
+    id: "Translate&Copy",
+    title: browser.i18n.getMessage("menuItem2"),
+    contexts: ["selection"],
+  },
+  onCreated
+);
 
 browser.menus.onClicked.addListener((info, tab) => {
   switch (info.menuItemId) {
-    case "Translate":
-    browser.tabs.executeScript({
-        file: "./translate.js"
+    case "Translate&Replace":
+      browser.tabs.executeScript({
+        file: "./translate-replace.js",
+      });
+      break;
+    case "Translate&Copy":
+      browser.tabs.executeScript({
+        file: "./translate-copy.js",
       });
       break;
   }

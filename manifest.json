@@ -1,11 +1,11 @@
 {
-
   "manifest_version": 2,
   "name": "Ghbdtn! -> Привет!",
-  "version": "1.3",
+  "version": "1.4",
   "default_locale": "ru",
   "description": "Переводит весь текст набранный на английском на русский",
   "icons": {
+    "32": "icons/icon-32.png",
     "48": "icons/icon-48.png"
   },
   "author": "Ilya Panfilov",
@@ -26,5 +26,4 @@
   },
 
   "permissions": ["activeTab", "menus"]
-
 }
